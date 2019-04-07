@@ -18,6 +18,6 @@ from django.core.wsgi import get_wsgi_application
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mfdw_site.settings')
 
 application = get_wsgi_application()
-logging.debug("application")
+logging.debug(application)
 
 

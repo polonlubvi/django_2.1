@@ -11,13 +11,11 @@ import os
 import logging
 import logging.config
 
-logging.config.fileConfig("logging.conf")
-
 from django.core.wsgi import get_wsgi_application
+
+logging.config.fileConfig("logging.conf")
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mfdw_site.settings')
 
 application = get_wsgi_application()
-logging.debug(application)
-
-
+# logging.debug(application)
